@@ -23,6 +23,44 @@
             <section>
                 <h2>Kontakt oss</h2>
             </section>
+            <section>
+                <h2>Ta Kontakt med oss i dag </h2>
+                <form method="post">
+                    <label for="navn">Navn:</label>
+                    <input type="text" name="navn" placeholder="Mohammed Haron.." id="navn" maxlength="45" required>
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="eksemplehiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+
+                    </label>
+                    <label>
+                        Emne:
+                        <input type="text" name="emne" placeholder="hva handler det om?">
+                    </label>
+                    Ja
+                    <input type="radio" name="valg">
+                    <label>
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        Nei
+                        <input type="radio">
+                    </label>
+                    <label>
+                        kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    <input type="submit" value="Send melding">
+                    <label>
+                        Favoritt mat
+                        <select>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="kebab">Kabab</option> 
+                        </select>
+                    </label>
+                </form>
+            </section>
         </main>
         <footer>2024 Mohammed Haron</footer>
     </body>
