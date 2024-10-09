@@ -23,7 +23,7 @@ header{
 }
 nav{
    
-    background-color: aquamarine;
+    background-color: #FFD700;
     grid-area: navigering;
   /*grid-column-start: 1;
   grid-column-end: 4;
@@ -31,7 +31,7 @@ nav{
   grid-row-end: 3;*/
 }
 main{
-    background-color: blueviolet;
+    background-color: #f5ffff;
     grid-area: main;
     /*grid-column-start: 1;
   grid-column-end: 3;
@@ -48,7 +48,7 @@ aside{
 
 }
 footer{
-background-color: chartreuse;
+background-color: #0ff;
 grid-area: footer;
 
 /*grid-column-start: 1;

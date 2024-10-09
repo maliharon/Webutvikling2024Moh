@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+
+
+#grid-container{
+ display: grid;
+ grid-template-areas: "header header header"
+                        "navigering navigering navigerin"
+                        "min min"
+                        "footer footer footer";
+
+}
+#logo{
+    background-color: tan;
+    display: flex;
+  justify-content: center;
+  
+    
+
+}
+
+header{
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1 / 2;
+}
+
+.header{
+    display: flex;
+    
+
+}
+main{
+    background-color: antiquewhite;
+    grid-column: 2/ 3;
+    grid-row: 2/3;
+
+}
+
+footer{
+    background-color: dimgray;
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
