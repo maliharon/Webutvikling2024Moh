@@ -20,8 +20,6 @@ body{
     display: flex;
   justify-content: center;
   
-    
-
 }
 
 header{
@@ -41,6 +39,10 @@ main{
     grid-column: 2/ 3;
     grid-row: 2/3;
 
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer{
