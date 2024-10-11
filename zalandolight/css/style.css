@@ -1,5 +1,5 @@
 html{
-    font-size: 18px;
+    font-size: calc(1em + 1vw);
 }
 
 *{
@@ -9,6 +9,26 @@ html{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1rem;
+}
+p, a{
+    font-size: 0.8rem;
 }
 
 #grid-container{
@@ -127,7 +147,7 @@ main nav ul{
 }
 
 
-
+/*DESKTOPP*/
 @media only screen and (min-width:800px){
     .fa-duotone{
         display: none;
@@ -136,6 +156,8 @@ main nav ul{
         display:flex !important;
 
     }
+    h3{ font-size: 1.4rem;}
+    p, a{font-size: 0,6rem;}
 }
 
 
