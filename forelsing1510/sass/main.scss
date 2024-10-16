@@ -1,0 +1,12 @@
+
+
+@use 'layout.scss';
+@use 'Logginn.scss';
+@use 'colors' as *;
+
+
+body {
+    background-color: $blue;
+    height: 100vh;
+    font-family: $mainFont;
+}

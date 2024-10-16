@@ -1,0 +1,30 @@
+ @use'colors' as *;
+ 
+ @mixin box($width, $height, $pad, $bradius){
+    width: 100%;
+    max-width: $width;
+    height: $height;
+    padding: $pad;
+    border-radius: $bradius;
+ }
+
+ @mixin flexbox($direction,  $wrap, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+
+form{
+    background-color: $white;
+    @include flexbox(colomn, nowrap, 1rem)
+    
+   
+
+    @include box(600px, auto, 3rem, 30px);
+
+    inpu{
+        @include box(100%, auto, 1rem, 30px );
+        padding: 1rem;
+        border: 1px solid $black;
+    }
+}
