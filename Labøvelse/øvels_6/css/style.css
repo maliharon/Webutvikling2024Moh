@@ -1,0 +1,59 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+header{
+    background-image: url("../css/artificial-intelligence-3706562_1280.jpg");
+  color: whit;
+  text-transform: uppercase;
+  padding: 5rem;
+  text-align: center;
+}
+  .flex-container{
+   display: flex;
+    background-color:#bdaf8d;
+}
+
+
+
+
+main, article{
+    display: flex;
+    gap: 1rem;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 20px;
+    align-content: space-around;
+    
+    
+    
+    
+}
+
+ h2{
+    display: flex;
+    float: left; 
+padding: 10px;
+margin: 20px;      
+}
+aside section nav ul li{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+footer, p{
+    background-color: black;
+    color: whit;
+    padding: 5px;
+    
+}

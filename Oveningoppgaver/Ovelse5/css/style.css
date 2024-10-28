@@ -33,10 +33,9 @@ nav, ul{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     gap: 1rem;
     list-style: none;
-    justify-content: center;
     background-color: cadetblue;
 }
 footer{
