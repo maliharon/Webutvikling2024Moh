@@ -1,88 +1,95 @@
 *{
     
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
 }
 
 
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
+  
+}
+
+
+#grid-container{
+    display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: auto auto auto auto;
+ 
+    
 
 }
 
+@media (max-width: 768px) {
+   #grid-container {
+       grid-template-columns: 1fr; /* Single column for smaller screens */
+   }
+
+   main, aside {
+       grid-column: 1; /* Full width for main and aside */
+   }
+}
+   
 header{
-    background-image: url("../css/artificial-intelligence-3706562_1280.jpg");
-    text-transform: uppercase;
-    padding: 5rem;
-    text-align: center;
-    color: white;
+   display:grid ;
+   grid-column: 1/4;
+   grid-row: 1;
+   
 }
 
-  .flex-container{
-   display: flex;
-    background-color:#b88a2e;
-    padding: 10px;
-    
-    
-    
-    
-}
-#container{
-    display: flex;
-    justify-content: end;
-}
-header, nav, footer{
-    width: 100%;
-}
-
-
-div {
-    /*display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;*/
-    
-}
-
-main, article{
-    /*display: grid;
-    gap: 5rem;
-    padding: 5px;
-     border: 2px solid black;
-    box-shadow: 10px 10px 20px;
-    align-content: space-around;
-    align-content: space-between;*/
-     
-}
-
- h2{
-    display: flex; 
-    padding: 5px;
-    margin: 5px;      
-}
-aside section nav ul li{
+header h1{
     display: flex;
     justify-content: center;
-    
-    
-    
+    background: url('picture.jpg') -47px 0;
+    padding: 30px;
+    margin: 0;
+    color: white;
     
 }
+ nav{
+    grid-column: 1/4;
+    grid-row: 2;
+    
+ }
 
-footer, p{
-    background-color: black;
-    color: whitx;
-    padding: 5px;
-    color: aliceblue;
-    text-align: center;
-    
-}
-aside{
-    width: 30%;
-    background-color: #ffe4c4;
-}
+ #container, nav, ul{
+   display: flex;
+   background-color: burlywood;
+   gap: 1rem;
+   list-style: none;
+ }
+
+ main{
+    grid-column: 1/3;
+    grid-row: 3;
+ }
+
+ main section{
+   display: flex;
+   padding: 15px;
+   margin: 10px;
+   gap: 4rem;
+ }
+ aside{
+    grid-column: 3;
+    grid-row: 3;
+ }
+
+ main aside section nav ul{
+   background-color: aquamarine;
+ }
+ footer{
+    grid-column: 1/4;
+    grid-row: 4;
+ }
+ footer{
+   display: flex;
+   justify-content: center;
+   background-color: black;
+   color: azure;
+ }
+ p a{
+   color:white;
+ }
 
